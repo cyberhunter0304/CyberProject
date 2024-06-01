@@ -1,0 +1,5 @@
+[
+    { "username": "chiefwarden@vit", "password": "chi123", "role": "enquiry" },
+    { "username": "director@vit", "password": "dir123", "role": "enquiry" },
+    { "username": "dsw@vit", "password": "dsw123", "role": "decision" }
+]

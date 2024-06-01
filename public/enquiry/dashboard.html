@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> 
+    <div class="container">
+        <div class="logo">
+        <a href="http://localhost:3000"><img src="logo.png" alt="Logo"></a>
+      </div>
+        <div class="username" id="username"></div>
+        <h1>Enquiry Dashboard</h1>
+        <div id="toggleContainer">
+            <button class="toggleButton" id="viewHistoryButton" onclick="toggleHistory()">View History</button>
+        </div>
+        <form id="enquiryForm">
+            <br><br>
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="registerNumber">Register Number</label>
+            <input type="text" id="registerNumber" name="registerNumber" required>
+
+            <label for="proctorEmail">Proctor Email</label>
+            <input type="email" id="proctorEmail" name="proctorEmail" required>
+
+            <label for="parentEmail">Parent Email</label>
+            <input type="email" id="parentEmail" name="parentEmail" required>
+
+            <label for="activityType">Type of Activity</label>
+            <input type="text" id="activityType" name="activityType" required>
+
+            <label for="report">Report</label>
+            <textarea id="report" name="report" rows="10" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="history" style="display: none;">
+            <h2>History</h2>
+            <div id="reportHistory"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
